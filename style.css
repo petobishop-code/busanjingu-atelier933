@@ -497,3 +497,38 @@ footer{
     grid-template-columns:1fr;
   }
 }
+
+
+/* v10 floor image correction: no cropping, no banner images */
+.floor-hero-gallery{
+  align-items:start;
+}
+.floor-hero-gallery figure,
+.floor-media-grid figure,
+.floor-mosaic figure{
+  background:#fff;
+  overflow:visible;
+}
+.floor-hero-gallery img,
+.floor-hero-gallery .floor-hero-large img,
+.floor-media-grid img,
+.floor-media-grid--plans img,
+.floor-media-grid--photos img,
+.floor-mosaic img,
+.floor-mosaic .floor-mosaic-wide img{
+  width:100%;
+  height:auto !important;
+  max-height:none !important;
+  object-fit:contain !important;
+  object-position:center center;
+  display:block;
+  background:#fff;
+}
+.floor-hero-gallery figcaption,
+.floor-media-grid figcaption,
+.floor-mosaic figcaption{
+  padding:0 2px;
+}
+.floor-consult-banner{
+  display:none !important;
+}
