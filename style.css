@@ -261,3 +261,239 @@ footer{
     height:auto;
   }
 }
+
+
+/* v8 full floor guide gallery */
+.floor-heading{max-width:1050px}
+.floor-hero-gallery{
+  display:grid;
+  grid-template-columns:1.4fr .8fr .8fr;
+  gap:14px;
+  margin:42px 0 48px;
+}
+.floor-hero-gallery figure,
+.floor-media-grid figure,
+.floor-mosaic figure{
+  margin:0;
+}
+.floor-hero-gallery img{
+  width:100%;
+  height:330px;
+  object-fit:cover;
+  display:block;
+}
+.floor-hero-gallery .floor-hero-large img{height:330px}
+.floor-hero-gallery figcaption,
+.floor-media-grid figcaption,
+.floor-mosaic figcaption{
+  margin-top:8px;
+  font-size:12px;
+  line-height:1.55;
+  color:#7b6a5d;
+}
+.floor-guide-lead{
+  display:grid;
+  grid-template-columns:.9fr 1.1fr;
+  gap:56px;
+  padding:34px 0 46px;
+  border-top:1px solid #d9cbbf;
+  border-bottom:1px solid #d9cbbf;
+}
+.floor-guide-lead h3{
+  margin:0;
+  font-size:30px;
+  line-height:1.4;
+  color:#2b1a12;
+}
+.floor-guide-lead p{
+  margin:0 0 14px;
+  line-height:1.85;
+  color:#65564c;
+}
+.floor-chapter{
+  margin:70px 0 0;
+  padding-top:14px;
+}
+.floor-chapter-head{
+  display:grid;
+  grid-template-columns:100px 1fr;
+  gap:28px;
+  align-items:start;
+  margin-bottom:32px;
+}
+.floor-badge{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  width:82px;
+  height:82px;
+  border-radius:50%;
+  background:#2b1a12;
+  color:#fffdf8;
+  font-family:Georgia,serif;
+  font-size:26px;
+}
+.floor-chapter-head h3{
+  margin:0 0 14px;
+  font-size:31px;
+  line-height:1.4;
+  color:#2b1a12;
+}
+.floor-chapter-head p:not(.floor-kicker){
+  max-width:900px;
+  margin:0;
+  line-height:1.9;
+  color:#65564c;
+}
+.floor-media-grid{
+  display:grid;
+  gap:16px;
+  margin:20px 0;
+}
+.floor-media-grid--plans{
+  grid-template-columns:repeat(3,1fr);
+  align-items:stretch;
+}
+.floor-media-grid--plans:has(.floor-wide-plan){
+  grid-template-columns:1.35fr .65fr;
+}
+.floor-media-grid--photos{
+  grid-template-columns:repeat(3,1fr);
+}
+.floor-media-grid img{
+  width:100%;
+  height:320px;
+  object-fit:cover;
+  display:block;
+  border:1px solid #d8c9bc;
+  background:#f3ece4;
+}
+.floor-media-grid--plans img{
+  object-fit:contain;
+  background:#fff;
+}
+.floor-text-columns{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:18px;
+  margin:28px 0;
+}
+.floor-text-columns>div{
+  padding:24px;
+  background:#f5efe8;
+  border:1px solid #decfc2;
+}
+.floor-text-columns h4{
+  margin:0 0 10px;
+  font-size:19px;
+  color:#2b1a12;
+}
+.floor-text-columns p{
+  margin:0;
+  line-height:1.8;
+  color:#66574d;
+}
+.floor-check-panel{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  margin-top:20px;
+}
+.floor-check-panel span{
+  padding:10px 14px;
+  background:#ede3d9;
+  border:1px solid #d8c7b8;
+  font-size:13px;
+  color:#4f392d;
+}
+.floor-consult-banner{
+  display:block;
+  margin:54px 0;
+}
+.floor-consult-banner img{
+  display:block;
+  width:100%;
+  max-height:240px;
+  object-fit:cover;
+  border-radius:3px;
+}
+.floor-extra-section{
+  margin-top:76px;
+  padding-top:46px;
+  border-top:1px solid #d8c9bc;
+}
+.floor-extra-heading{
+  max-width:760px;
+  margin-bottom:28px;
+}
+.floor-extra-heading h3{
+  margin:0 0 12px;
+  font-size:30px;
+  line-height:1.4;
+  color:#2b1a12;
+}
+.floor-extra-heading p{
+  margin:0;
+  line-height:1.85;
+  color:#65564c;
+}
+.floor-mosaic{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:16px;
+}
+.floor-mosaic .floor-mosaic-wide{
+  grid-column:span 2;
+}
+.floor-mosaic img{
+  width:100%;
+  height:360px;
+  object-fit:cover;
+  display:block;
+}
+.floor-mosaic .floor-mosaic-wide img{
+  height:430px;
+}
+.floor-point-box{
+  margin-top:64px;
+}
+.floor-point-box p:not(.floor-kicker){
+  margin:12px 0 0;
+  line-height:1.75;
+  color:#d8c8bb;
+}
+.floor-point-list{
+  grid-template-columns:repeat(2,1fr);
+}
+.floor-note{
+  margin-bottom:18px;
+}
+
+@media(max-width:900px){
+  .floor-hero-gallery,
+  .floor-guide-lead,
+  .floor-chapter-head,
+  .floor-media-grid--plans,
+  .floor-media-grid--plans:has(.floor-wide-plan),
+  .floor-media-grid--photos,
+  .floor-text-columns,
+  .floor-mosaic{
+    grid-template-columns:1fr;
+  }
+  .floor-mosaic .floor-mosaic-wide{
+    grid-column:auto;
+  }
+  .floor-hero-gallery img,
+  .floor-hero-gallery .floor-hero-large img,
+  .floor-media-grid img,
+  .floor-mosaic img,
+  .floor-mosaic .floor-mosaic-wide img{
+    height:auto;
+  }
+  .floor-chapter-head{
+    gap:16px;
+  }
+  .floor-point-list{
+    grid-template-columns:1fr;
+  }
+}
