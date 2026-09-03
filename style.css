@@ -1840,3 +1840,85 @@ footer{background:#dfd1c4}
     min-height:220px !important;
   }
 }
+
+
+/* v33 - 상세페이지 SEO 본문 확장 */
+.detail-seo-expanded{
+  background:#f1e8de;
+  padding:88px 24px 96px;
+}
+.detail-seo-inner{
+  width:min(1120px,100%);
+  margin:0 auto;
+}
+.detail-seo-head{
+  max-width:820px;
+  margin:0 auto 42px;
+  text-align:center;
+}
+.detail-seo-head span{
+  display:block;
+  margin-bottom:12px;
+  font-size:10px;
+  letter-spacing:.22em;
+  color:#7a5238;
+  font-weight:700;
+}
+.detail-seo-head h2{
+  margin:0 0 16px;
+  color:#2b1a12;
+  font-size:36px;
+  line-height:1.35;
+}
+.detail-seo-head p{
+  margin:0;
+  color:#6b5749;
+  font-size:15px;
+  line-height:1.9;
+}
+.detail-seo-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:18px;
+}
+.detail-seo-card{
+  background:#fffdf8;
+  border:1px solid rgba(74,45,30,.16);
+  padding:34px 34px 36px;
+}
+.detail-seo-card h2{
+  margin:0 0 16px;
+  color:#2b1a12;
+  font-size:22px;
+  line-height:1.5;
+}
+.detail-seo-card p{
+  margin:0;
+  color:#665247;
+  font-size:14px;
+  line-height:1.95;
+}
+.detail-seo-note{
+  margin-top:22px;
+  padding:24px 28px;
+  border-top:1px solid rgba(74,45,30,.22);
+  border-bottom:1px solid rgba(74,45,30,.22);
+  color:#6a5548;
+}
+.detail-seo-note strong{
+  display:block;
+  margin-bottom:8px;
+  color:#3b2418;
+  font-size:14px;
+}
+.detail-seo-note p{
+  margin:0;
+  font-size:13px;
+  line-height:1.85;
+}
+@media(max-width:760px){
+  .detail-seo-expanded{padding:64px 18px 70px;}
+  .detail-seo-grid{grid-template-columns:1fr;}
+  .detail-seo-card{padding:26px 22px 28px;}
+  .detail-seo-head h2{font-size:30px;}
+}
