@@ -803,3 +803,17 @@ footer{
   .floor-premium-photo-pair,.floor-premium-summary,.floor-premium-summary-grid{grid-template-columns:1fr}
   .floor-premium-label{font-size:42px}
 }
+
+/* v13 floor heading line-break correction */
+.floor-premium .floor-heading h2{
+  word-break:keep-all;
+  line-height:1.28;
+}
+.floor-premium .floor-title-line2{
+  white-space:nowrap;
+}
+@media(max-width:760px){
+  .floor-premium .floor-title-line2{
+    white-space:normal;
+  }
+}
