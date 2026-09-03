@@ -1713,3 +1713,37 @@ footer{background:#dfd1c4}
     min-width:auto;
   }
 }
+
+
+/* v29 - DEMAND & LOCATION 이미지 확대
+   데스크톱에서 오른쪽 이미지를 사용자가 표시한 영역 정도로 크게 보이게 조정 */
+@media (min-width: 901px){
+  #demand .brown-inner{
+    grid-template-columns: .88fr 1.12fr;
+    gap: 54px;
+    overflow: visible;
+  }
+
+  #demand .brown-image{
+    width: 128%;
+    max-width: none;
+    margin-left: -2%;
+    margin-right: -26%;
+  }
+
+  #demand .brown-image img{
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+}
+
+/* 모바일/태블릿에서는 화면 밖으로 넘치지 않도록 원래 폭 유지 */
+@media (max-width: 900px){
+  #demand .brown-image{
+    width: 100% !important;
+    max-width: 620px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
