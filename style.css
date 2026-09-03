@@ -900,3 +900,27 @@ footer{
 .floor-premium-hero{
   background:transparent;
 }
+
+
+/* v17 improve floor text contrast on light beige */
+.floor-premium-summary{
+  background:transparent !important;
+  color:#5c4033 !important;
+  border-top:1px solid #d7cabf;
+  border-bottom:1px solid #d7cabf;
+}
+.floor-premium-summary h3{
+  color:#3b2418 !important;
+}
+.floor-premium-summary .floor-kicker{
+  color:#8a6a56 !important;
+}
+.floor-premium-summary-grid span{
+  color:#4a2e21 !important;
+  border:1px solid #cdbdae !important;
+  background:rgba(255,255,255,.16) !important;
+}
+.floor-note,
+.floor-note p{
+  color:#5c4033 !important;
+}
