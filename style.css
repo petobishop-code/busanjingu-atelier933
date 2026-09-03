@@ -1810,3 +1810,33 @@ footer{background:#dfd1c4}
     min-height:auto !important;
   }
 }
+
+
+/* v32 - 인사이트 카드는 짧고 클릭하기 쉽게 */
+.insights-section .insight-grid a,
+.insights-section .insight-grid a.featured{
+  min-height:245px !important;
+  padding:26px !important;
+}
+.insights-section .insight-grid a p,
+.insights-section .insight-grid a.featured p{
+  font-size:12.5px !important;
+  line-height:1.75 !important;
+  margin-bottom:18px !important;
+  display:-webkit-box;
+  -webkit-line-clamp:3;
+  -webkit-box-orient:vertical;
+  overflow:hidden;
+}
+.insights-section .insight-grid a h3,
+.insights-section .insight-grid a.featured h3{
+  font-size:20px !important;
+  line-height:1.45 !important;
+  margin-bottom:14px !important;
+}
+@media(max-width:560px){
+  .insights-section .insight-grid a,
+  .insights-section .insight-grid a.featured{
+    min-height:220px !important;
+  }
+}
