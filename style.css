@@ -1169,3 +1169,120 @@ footer{
     font-size:31px;
   }
 }
+
+
+/* v22 unified premium design system */
+:root{
+  --oak:#2b1a12;
+  --oak-2:#3b2418;
+  --oak-3:#5a3826;
+  --cream:#f5eee6;
+  --cream-2:#ebe1d6;
+  --paper:#fffaf4;
+  --line:#d6c8bb;
+  --muted:#75645b;
+}
+body{background:var(--cream);}
+.section{max-width:1180px;padding:118px 24px;}
+.kicker,.eyebrow{font-size:9px;letter-spacing:.22em;}
+
+/* header */
+.header{height:76px;background:rgba(43,26,18,.98);border-bottom:1px solid rgba(255,255,255,.07);}
+.brand strong,.nav a{color:#fffaf4}.brand span{color:#c7a68e}.header-cta{background:#fffaf4;color:var(--oak);border-color:#fffaf4;padding:11px 20px}
+.nav a{opacity:.88}.nav a:hover{opacity:1}
+
+/* hero: stronger visual hierarchy */
+.hero{max-width:1500px;min-height:760px;background:var(--cream-2)}
+.hero-copy{padding:122px 7.5vw 94px}
+.hero h1{font-size:clamp(64px,6.8vw,104px);line-height:.98;margin:20px 0 30px;color:var(--oak)}
+.hero-lead{max-width:620px;color:#624c40}
+.hero-visual{min-height:760px}
+.hero-visual figcaption{right:42px;bottom:38px;border-left:0;border-top:2px solid var(--oak-3);background:rgba(255,250,244,.94)}
+.hero-micro{margin-top:48px;gap:0;border-top:1px solid #cdbcae;border-bottom:1px solid #cdbcae}
+.hero-micro span{border:0;border-right:1px solid #cdbcae;background:transparent;padding:11px 16px 11px 0;margin-right:16px;color:#65493b}
+.hero-micro span:last-child{border-right:0}
+
+/* numbers */
+.numbers{max-width:1180px;margin:-50px auto 0;box-shadow:0 20px 50px rgba(59,36,24,.08);background:var(--paper)}
+.numbers article{padding:38px 30px;min-height:176px}
+.numbers strong{font-size:22px}
+
+/* editorial rhythm */
+.editorial-heading{column-gap:88px;margin-bottom:58px}
+.editorial-heading h2,.insights-head h2,.faq-head h2{font-size:46px;line-height:1.28}
+.editorial-copy p,.insights-head>p,.faq-head>p{font-size:14px;line-height:1.9}
+.value-photo-grid{grid-template-columns:1.55fr .45fr;gap:26px}
+.value-photo-grid figure{padding:0;border:0;background:transparent}
+.value-notes article{background:transparent;border:0;border-top:1px solid var(--line);padding:24px 4px}
+.value-notes article:last-child{border-bottom:1px solid var(--line)}
+.value-notes h3{font-size:22px}
+
+/* demand section */
+.brown-section{background:var(--oak)}
+.brown-inner{gap:78px}.brown-image{padding:0;background:transparent}.brown-image img{border:1px solid rgba(255,255,255,.12)}
+.stat-list b{font-size:30px}
+
+/* location */
+.location .wide-info{padding:0;border:0;background:transparent}
+
+/* replace cards with editorial checklist */
+.value-principles{display:grid;grid-template-columns:.72fr 1.28fr;gap:90px;align-items:start;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.principles-title{position:sticky;top:110px}.principles-title h2{font-family:Georgia,"Noto Serif KR",serif;font-size:42px;line-height:1.3;font-weight:500;color:var(--oak);margin:10px 0 18px}.principles-title>p:last-child{font-size:13px;line-height:1.9;color:var(--muted)}
+.principles-list article{display:grid;grid-template-columns:70px 1fr;gap:20px;padding:28px 0;border-top:1px solid var(--line)}
+.principles-list article:last-child{border-bottom:1px solid var(--line)}
+.principles-list span{font-family:Georgia,serif;color:#8b654f;font-size:13px;padding-top:4px}
+.principles-list h3{margin:0 0 9px;font-family:Georgia,"Noto Serif KR",serif;font-size:23px;color:var(--oak)}
+.principles-list p{margin:0;color:#6f5c51;font-size:13px;line-height:1.85}
+
+/* floor */
+.floor-redesign{background:var(--cream-2);padding-top:124px}
+.floor-redesign-head{margin-bottom:92px}.floor-redesign-head h2{font-size:48px}.floor-editorial{padding:100px 0}.floor-level{font-size:70px}.floor-editorial-copy h3{font-size:32px}.floor-plan-wide{background:rgba(255,250,244,.55);padding:28px 34px 18px;border-color:#d1c2b4}.floor-dark-band{background:var(--oak)}
+
+/* premium medical band */
+.medical-premium{background:var(--oak);color:#f9efe6}
+.medical-premium-inner{display:grid;grid-template-columns:1.05fr .95fr;gap:76px;align-items:center}
+.medical-premium .medical-image img{padding:0;border:1px solid rgba(255,255,255,.12);background:transparent}
+.medical-premium .medical-copy h2{color:#fff8f1;font-size:44px;line-height:1.3;margin:12px 0 24px}
+.medical-premium .medical-copy>p:not(.kicker){color:#d9c9bd;font-size:14px;line-height:1.9}
+.business-lines{margin-top:30px;border-top:1px solid rgba(255,255,255,.16)}
+.business-lines span{display:block;padding:14px 0;border-bottom:1px solid rgba(255,255,255,.16);font-size:13px;color:#f1e4da}
+
+/* insights: 2 featured + 4 compact */
+.insights-section{background:#e7dbcf}
+.insights-head{gap:86px;margin-bottom:48px}
+.insight-grid{grid-template-columns:repeat(4,1fr);gap:16px}
+.insight-grid a{min-height:260px;padding:26px;border:1px solid #d4c5b8;background:rgba(255,250,244,.82);box-shadow:none}
+.insight-grid a.featured{grid-column:span 2;min-height:320px;padding:34px}
+.insight-grid a.featured h3{font-size:27px;max-width:520px}
+.insight-grid a.featured p{font-size:13px;max-width:560px}
+.insight-grid h3{font-size:20px}
+.insight-grid a:hover{transform:translateY(-2px);box-shadow:0 14px 28px rgba(59,36,24,.08)}
+
+/* FAQ: calmer, larger typography */
+.faq{padding-top:120px;padding-bottom:120px}
+.faq-head{margin-bottom:42px;gap:86px}
+.faq details{background:transparent}
+.faq summary{padding:25px 6px;font-size:19px}
+.faq-answer{padding:0 8% 28px 4px;gap:36px}
+.faq-answer p{font-size:13px;line-height:1.9}
+
+/* CTA/footer */
+.final-cta{background:#24150e;padding:118px 24px}.final-cta h2{font-size:52px}
+footer{background:#dfd1c4}
+
+@media(max-width:900px){
+  .section{padding:82px 20px}
+  .hero{min-height:auto}.hero-copy{padding:88px 24px 58px}.hero-visual{min-height:500px}
+  .value-principles,.medical-premium-inner{grid-template-columns:1fr;gap:38px}
+  .principles-title{position:static}
+  .insight-grid{grid-template-columns:1fr 1fr}
+  .insight-grid a.featured{grid-column:span 2}
+  .editorial-heading h2,.insights-head h2,.faq-head h2{font-size:36px}
+}
+@media(max-width:560px){
+  .header{height:64px}.hero h1{font-size:52px}.hero-visual{min-height:400px}
+  .hero-micro{display:grid;border-bottom:0}.hero-micro span{border-right:0;border-bottom:1px solid #cdbcae;margin:0;padding:10px 0}
+  .insight-grid{grid-template-columns:1fr}.insight-grid a.featured{grid-column:auto;min-height:280px}
+  .medical-premium .medical-copy h2{font-size:34px}
+  .final-cta h2{font-size:36px}
+}
