@@ -843,3 +843,36 @@ footer{
     white-space:normal;
   }
 }
+
+
+/* v15 floor section breathing room */
+.floor-premium.section{
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: 34px 32px 110px;
+  background: #ebe1d6;
+}
+.floor-premium .container{
+  max-width: 1180px;
+  margin: 0 auto;
+  background: #f7f1ea;
+  padding: 62px 54px 0;
+}
+.floor-premium .floor-heading{
+  margin-bottom: 56px;
+}
+.floor-premium-hero{
+  margin: 46px 0 100px;
+}
+.floor-premium .floor-note{
+  padding-bottom: 42px;
+}
+@media(max-width:900px){
+  .floor-premium.section{
+    max-width: none;
+    padding: 20px 14px 80px;
+  }
+  .floor-premium .container{
+    padding: 36px 20px 0;
+  }
+}
