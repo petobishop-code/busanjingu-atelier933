@@ -1605,3 +1605,87 @@ footer{background:#dfd1c4}
     padding-right:20px;
   }
 }
+
+
+/* v25: true centered axis fix
+   floor section also has class="section", so the generic .section max-width
+   was clipping its background to the left. Force full-width section and
+   keep only the inner content centered. */
+.floor-redesign.section{
+  width:100% !important;
+  max-width:none !important;
+  margin-left:0 !important;
+  margin-right:0 !important;
+  padding-left:0 !important;
+  padding-right:0 !important;
+}
+
+.floor-redesign .container{
+  width:min(1180px, calc(100% - 64px));
+  max-width:1180px !important;
+  margin-left:auto !important;
+  margin-right:auto !important;
+  padding-left:0 !important;
+  padding-right:0 !important;
+}
+
+/* Center the major middle-page content blocks on desktop as well. */
+.value-principles.section,
+.location.section,
+.medical-premium .section,
+.insights-inner.section,
+.faq.section{
+  margin-left:auto !important;
+  margin-right:auto !important;
+}
+
+/* Make the floor intro feel centered instead of visually leaning left. */
+.floor-redesign-head{
+  max-width:980px;
+  margin-left:auto !important;
+  margin-right:auto !important;
+  text-align:center;
+}
+.floor-redesign-head > div,
+.floor-redesign-head > p{
+  width:100%;
+  max-width:820px;
+  margin-left:auto !important;
+  margin-right:auto !important;
+}
+
+/* Keep each floor row centered and balanced within the content width. */
+.floor-editorial{
+  max-width:1080px;
+  margin-left:auto;
+  margin-right:auto;
+}
+.floor-plan-wide{
+  max-width:1080px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+/* Desktop checklist: centered overall block, without crushing readability. */
+.value-principles.section{
+  max-width:1180px;
+}
+.principles-title{
+  padding-left:0;
+}
+.principles-list{
+  width:100%;
+}
+
+@media(max-width:900px){
+  .floor-redesign .container{
+    width:calc(100% - 36px);
+  }
+  .floor-redesign-head{
+    max-width:680px;
+  }
+  .floor-editorial,
+  .floor-plan-wide{
+    max-width:680px;
+  }
+}
