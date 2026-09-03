@@ -817,3 +817,29 @@ footer{
     white-space:normal;
   }
 }
+
+/* v14 exact two-line floor heading */
+.floor-premium .floor-heading{
+  grid-template-columns:1.12fr .88fr;
+  column-gap:56px;
+}
+.floor-premium .floor-title-exact{
+  font-size:38px !important;
+  line-height:1.34 !important;
+  letter-spacing:-.05em;
+}
+.floor-premium .floor-title-exact span{
+  display:block;
+  white-space:nowrap;
+}
+@media(max-width:900px){
+  .floor-premium .floor-heading{
+    grid-template-columns:1fr;
+  }
+  .floor-premium .floor-title-exact{
+    font-size:34px !important;
+  }
+  .floor-premium .floor-title-exact span{
+    white-space:normal;
+  }
+}
