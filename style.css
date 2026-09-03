@@ -1922,3 +1922,24 @@ footer{background:#dfd1c4}
   .detail-seo-card{padding:26px 22px 28px;}
   .detail-seo-head h2{font-size:30px;}
 }
+
+/* v34 - 상세페이지 심화 확장 */
+.detail-seo-grid{grid-template-columns:1fr 1fr;}
+.detail-faq{
+  background:#fffdf8;
+  padding:84px 24px 96px;
+}
+.detail-faq-inner{width:min(960px,100%);margin:0 auto;}
+.detail-faq-head{text-align:center;margin-bottom:34px;}
+.detail-faq-head span{font-size:10px;letter-spacing:.22em;color:#7a5238;font-weight:700;}
+.detail-faq-head h2{margin:10px 0 0;color:#2b1a12;font-size:34px;line-height:1.4;}
+.detail-faq-list{border-top:1px solid rgba(74,45,30,.18);}
+.detail-faq-list details{border-bottom:1px solid rgba(74,45,30,.18);padding:0 4px;}
+.detail-faq-list summary{cursor:pointer;list-style:none;padding:22px 8px;color:#2b1a12;font-size:16px;font-weight:700;}
+.detail-faq-list summary::-webkit-details-marker{display:none;}
+.detail-faq-list p{margin:0;padding:0 8px 22px;color:#665247;font-size:14px;line-height:1.85;}
+@media(max-width:760px){
+  .detail-seo-grid{grid-template-columns:1fr;}
+  .detail-faq{padding:64px 18px 72px;}
+  .detail-faq-head h2{font-size:29px;}
+}
