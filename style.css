@@ -876,3 +876,27 @@ footer{
     padding: 36px 20px 0;
   }
 }
+
+
+/* v16 floor section unified light-beige background */
+.floor-premium.section{
+  background:#ebe1d6 !important;
+}
+.floor-premium .container{
+  background:#ebe1d6 !important;
+}
+.floor-premium-hero,
+.floor-premium-block,
+.floor-premium-summary,
+.floor-note{
+  background:transparent;
+}
+.floor-premium-plan{
+  background:#f3ebe1;
+  border:1px solid #d7cabf;
+}
+.floor-premium-photo-pair figure,
+.floor-premium-photo,
+.floor-premium-hero{
+  background:transparent;
+}
