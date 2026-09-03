@@ -26,13 +26,14 @@ export default async function handler(req, res) {
     try { body = JSON.parse(body); } catch { body = {}; }
   }
 
-  const { name = '', phone = '', interest = '', message = '' } = body;
+  const { name = '', phone = '', interest = '', preferred_time = '', message = '' } = body;
   const clean = (v, max = 500) =>
     String(v).replace(/[<>]/g, '').trim().slice(0, max);
 
   const n = clean(name, 20);
   const p = clean(phone, 30);
   const i = clean(interest, 50);
+  const t = clean(preferred_time, 50);
   const m = clean(message, 500);
 
   if (!n || !p) {
@@ -55,6 +56,7 @@ export default async function handler(req, res) {
     `이름: ${n}`,
     `연락처: ${p}`,
     `관심분야: ${i || '-'}`,
+    `상담 가능 시간대: ${t || '시간대 무관'}`,
     `문의내용: ${m || '-'}`
   ].join('\n');
 

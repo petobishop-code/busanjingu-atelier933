@@ -360,6 +360,15 @@
       <label>이름<input name="name" required maxlength="20" placeholder="성함"></label>
       <label>연락처<input name="phone" required maxlength="20" inputmode="tel" placeholder="010-0000-0000"></label>
       <label>관심 분야<select name="interest"><option>상가 분양</option><option>상가 임대</option><option>메디컬 입점</option><option>호실별 조건 문의</option></select></label>
+      <label>상담 가능 시간대
+        <select name="preferred_time">
+          <option value="시간대 무관">시간대 무관</option>
+          <option value="오전 9시 ~ 12시">오전 9시 ~ 12시</option>
+          <option value="오후 12시 ~ 3시">오후 12시 ~ 3시</option>
+          <option value="오후 3시 ~ 6시">오후 3시 ~ 6시</option>
+          <option value="오후 6시 이후">오후 6시 이후</option>
+        </select>
+      </label>
       <label>문의 내용<textarea name="message" maxlength="500" placeholder="희망 업종, 필요한 면적, 직접 운영/임대 목적 등을 적어주세요."></textarea></label>
       <label class="agree"><input type="checkbox" required> 상담을 위한 개인정보 수집 및 이용에 동의합니다.</label>
       <button class="submit-btn" type="submit">상담 신청하기</button>
