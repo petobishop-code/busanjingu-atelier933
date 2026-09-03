@@ -1780,3 +1780,33 @@ footer{background:#dfd1c4}
     grid-template-columns:1fr !important;
   }
 }
+
+
+/* v31 - SEO 확장형 인사이트 카드 */
+.insights-section .insight-grid a,
+.insights-section .insight-grid a.featured{
+  min-height:355px !important;
+  display:flex !important;
+  flex-direction:column !important;
+}
+.insights-section .insight-grid a p,
+.insights-section .insight-grid a.featured p{
+  font-size:13px !important;
+  line-height:1.85 !important;
+  margin-bottom:24px !important;
+}
+.insights-section .insight-grid a b{
+  margin-top:auto !important;
+}
+@media(max-width:900px){
+  .insights-section .insight-grid a,
+  .insights-section .insight-grid a.featured{
+    min-height:330px !important;
+  }
+}
+@media(max-width:560px){
+  .insights-section .insight-grid a,
+  .insights-section .insight-grid a.featured{
+    min-height:auto !important;
+  }
+}
