@@ -1747,3 +1747,36 @@ footer{background:#dfd1c4}
     margin-right: auto !important;
   }
 }
+
+
+/* v30 - 인사이트 키워드 카드 8개: 3열 균일 카드 */
+.insights-section .insight-grid{
+  grid-template-columns:repeat(3,1fr) !important;
+  gap:15px !important;
+}
+.insights-section .insight-grid a,
+.insights-section .insight-grid a.featured{
+  grid-column:auto !important;
+  min-height:255px !important;
+  padding:28px !important;
+}
+.insights-section .insight-grid a h3,
+.insights-section .insight-grid a.featured h3{
+  font-size:21px !important;
+  max-width:none !important;
+}
+.insights-section .insight-grid a p,
+.insights-section .insight-grid a.featured p{
+  font-size:12px !important;
+  max-width:none !important;
+}
+@media(max-width:900px){
+  .insights-section .insight-grid{
+    grid-template-columns:1fr 1fr !important;
+  }
+}
+@media(max-width:560px){
+  .insights-section .insight-grid{
+    grid-template-columns:1fr !important;
+  }
+}
