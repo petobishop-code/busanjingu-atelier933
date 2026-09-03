@@ -1286,3 +1286,112 @@ footer{background:#dfd1c4}
   .medical-premium .medical-copy h2{font-size:34px}
   .final-cta h2{font-size:36px}
 }
+
+
+/* v23 hero line fix + centered middle layout */
+.hero{
+  grid-template-columns:1fr 1fr;
+}
+.hero-copy{
+  padding-left:clamp(58px,6vw,96px);
+  padding-right:clamp(48px,5vw,82px);
+}
+.hero-title-fixed{
+  font-size:clamp(58px,5.6vw,88px) !important;
+  line-height:1.04 !important;
+  letter-spacing:-.06em !important;
+}
+.hero-title-fixed span{
+  display:block;
+  white-space:nowrap;
+}
+
+/* Give the middle of the page more breathing room and visual centering. */
+.section{
+  max-width:1240px;
+  padding-left:56px;
+  padding-right:56px;
+}
+.editorial-heading{
+  grid-template-columns:1fr 1fr;
+  column-gap:72px;
+}
+.value-photo-grid{
+  grid-template-columns:1.42fr .58fr;
+}
+.brown-inner{
+  grid-template-columns:.96fr 1.04fr;
+  gap:68px;
+}
+.value-principles{
+  grid-template-columns:.9fr 1.1fr;
+  gap:70px;
+  padding-left:56px;
+  padding-right:56px;
+}
+.principles-title{
+  padding-left:12px;
+}
+.floor-redesign .container,
+.floor-dark-inner,
+.medical-premium-inner,
+.insights-inner,
+.faq{
+  max-width:1240px;
+}
+.floor-redesign .container{
+  padding-left:56px;
+  padding-right:56px;
+}
+.floor-editorial{
+  grid-template-columns:.96fr 1.04fr;
+  gap:64px;
+}
+.floor-editorial--image-left{
+  grid-template-columns:1.04fr .96fr;
+}
+.medical-premium-inner{
+  grid-template-columns:1fr 1fr;
+  gap:64px;
+}
+.insights-head,
+.faq-head{
+  grid-template-columns:1fr 1fr;
+  gap:72px;
+}
+
+@media(max-width:1100px){
+  .section,
+  .value-principles,
+  .floor-redesign .container{
+    padding-left:34px;
+    padding-right:34px;
+  }
+  .hero-copy{
+    padding-left:44px;
+    padding-right:36px;
+  }
+  .hero-title-fixed{
+    font-size:clamp(52px,5.4vw,72px) !important;
+  }
+}
+@media(max-width:900px){
+  .hero{grid-template-columns:1fr}
+  .hero-title-fixed span{white-space:normal}
+  .section,
+  .value-principles,
+  .floor-redesign .container{
+    padding-left:20px;
+    padding-right:20px;
+  }
+  .editorial-heading,
+  .brown-inner,
+  .value-principles,
+  .floor-editorial,
+  .floor-editorial--image-left,
+  .medical-premium-inner,
+  .insights-head,
+  .faq-head{
+    grid-template-columns:1fr;
+  }
+}
