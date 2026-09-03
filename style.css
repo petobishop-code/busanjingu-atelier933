@@ -767,3 +767,39 @@ footer{
     grid-template-columns:1fr;
   }
 }
+
+/* v12 premium editorial floor guide */
+.floor-premium{background:#f8f4ee}
+.floor-premium .container{max-width:1180px}
+.floor-premium-hero{margin:42px 0 90px}
+.floor-premium-hero img{display:block;width:100%;height:auto}
+.floor-premium-block{display:grid;grid-template-columns:.78fr 1.22fr;gap:54px;align-items:start;padding:72px 0;border-top:1px solid #d7cabf}
+.floor-premium-block--reverse .floor-premium-copy{order:2}
+.floor-premium-block--reverse .floor-premium-plan{order:1}
+.floor-premium-block--reverse .floor-premium-photo-pair{grid-column:1/-1}
+.floor-premium-copy{position:sticky;top:110px}
+.floor-premium-label{display:inline-block;margin-bottom:20px;font-family:Georgia,serif;font-size:54px;line-height:1;color:#2b1a12}
+.floor-premium-copy h3{margin:0 0 18px;font-size:31px;line-height:1.4;color:#2b1a12}
+.floor-premium-copy p:not(.floor-kicker){margin:0;line-height:1.9;color:#67584e}
+.floor-premium-points{display:flex;flex-wrap:wrap;gap:8px;margin-top:24px}
+.floor-premium-points span{padding:9px 12px;font-size:12px;border:1px solid #cdbdae;color:#543d30;background:transparent}
+.floor-premium-plan{margin:0;padding:28px;background:#fff}
+.floor-premium-plan img{display:block;width:100%;height:auto;object-fit:contain}
+.floor-premium-photo{grid-column:2;margin:22px 0 0}
+.floor-premium-photo img{display:block;width:100%;height:auto}
+.floor-premium-photo-pair{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:28px}
+.floor-premium-photo-pair figure{margin:0}
+.floor-premium-photo-pair img{display:block;width:100%;height:auto}
+.floor-premium-summary{display:grid;grid-template-columns:.85fr 1.15fr;gap:42px;margin-top:30px;padding:42px;background:#2b1a12;color:#fffdf8}
+.floor-premium-summary h3{margin:0;font-size:28px;line-height:1.45;color:#fffdf8}
+.floor-premium-summary .floor-kicker{color:#c8a98e}
+.floor-premium-summary-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+.floor-premium-summary-grid span{padding:13px 14px;border:1px solid rgba(255,255,255,.16);font-size:13px}
+.floor-premium .floor-note{margin-top:16px}
+@media(max-width:900px){
+  .floor-premium-block{grid-template-columns:1fr;gap:26px;padding:48px 0}
+  .floor-premium-copy,.floor-premium-block--reverse .floor-premium-copy,.floor-premium-block--reverse .floor-premium-plan{position:static;order:initial}
+  .floor-premium-photo{grid-column:auto}
+  .floor-premium-photo-pair,.floor-premium-summary,.floor-premium-summary-grid{grid-template-columns:1fr}
+  .floor-premium-label{font-size:42px}
+}
