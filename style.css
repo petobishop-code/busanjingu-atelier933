@@ -1943,3 +1943,18 @@ footer{background:#dfd1c4}
   .detail-faq{padding:64px 18px 72px;}
   .detail-faq-head h2{font-size:29px;}
 }
+
+
+/* v35 - 페이지당 약 500자 심화 본문 추가 */
+.detail-seo-card-wide{
+  grid-column:1 / -1;
+  background:#f8f1e9;
+}
+.detail-seo-card-wide p{
+  max-width:1000px;
+}
+@media(max-width:760px){
+  .detail-seo-card-wide{
+    grid-column:auto;
+  }
+}
