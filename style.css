@@ -1988,3 +1988,23 @@ footer{background:#dfd1c4}
     line-height:1.85 !important;
   }
 }
+
+
+/* v37 - '인사이트' 라벨만 확실하게 확대 */
+.insights-head > .kicker,
+.insights-head > span{
+  font-size:16px !important;
+  line-height:1.4 !important;
+  font-weight:700 !important;
+  letter-spacing:.12em !important;
+  margin-bottom:16px !important;
+  color:#5a3826 !important;
+}
+
+@media(max-width:560px){
+  .insights-head > .kicker,
+  .insights-head > span{
+    font-size:14px !important;
+    margin-bottom:12px !important;
+  }
+}
