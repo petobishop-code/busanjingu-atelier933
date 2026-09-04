@@ -2077,3 +2077,19 @@ body>.floating{
 body>.modal{
   z-index:200;
 }
+
+/* v40 medical specialty cards */
+.medical-specialty-insights{padding:90px 0;background:#f4efe7;color:#2c2019}
+.medical-specialty-head{display:grid;grid-template-columns:1fr .9fr;gap:56px;align-items:end;margin-bottom:34px}
+.medical-specialty-head span{font-size:10px;letter-spacing:.16em;color:#8b6b60;font-weight:800}
+.medical-specialty-head h2{margin:10px 0 0;font-size:42px;line-height:1.2;letter-spacing:-.04em}
+.medical-specialty-head p{margin:0;font-size:14px;line-height:1.9;color:#756b65}
+.medical-specialty-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.medical-specialty-card{min-height:245px;padding:26px;border:1px solid #d9cec2;border-radius:15px;background:#fff;color:#2b1d17;text-decoration:none;display:flex;flex-direction:column}
+.medical-specialty-card small{font-size:9px;letter-spacing:.15em;color:#9b756c}
+.medical-specialty-card h3{margin:17px 0 12px;font-size:20px;line-height:1.45;letter-spacing:-.025em}
+.medical-specialty-card p{margin:0;font-size:12px;line-height:1.85;color:#756c66}
+.medical-specialty-card b{margin-top:auto;padding-top:24px;font-size:10px;letter-spacing:.08em;color:#873947}
+.medical-specialty-card:hover{transform:translateY(-2px);box-shadow:0 14px 32px rgba(50,30,20,.08)}
+@media(max-width:900px){.medical-specialty-head{grid-template-columns:1fr;gap:14px}.medical-specialty-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.medical-specialty-insights{padding:68px 0}.medical-specialty-head h2{font-size:32px}.medical-specialty-grid{grid-template-columns:1fr}.medical-specialty-card{min-height:215px}}
