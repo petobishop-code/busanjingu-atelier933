@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://atelier-933.vercel.app/sitemap.xml
+Sitemap: https://busanjingu-atelier933.vercel.app/sitemap.xml
