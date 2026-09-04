@@ -2008,3 +2008,72 @@ footer{background:#dfd1c4}
     margin-bottom:12px !important;
   }
 }
+
+
+/* v39 - 상세페이지 좌측 CONTENTS + 상담 팝업 복구 */
+.article-page.rich{
+  max-width:1180px;
+}
+.article-layout-with-toc{
+  display:grid;
+  grid-template-columns:230px minmax(0,1fr);
+  gap:64px;
+  align-items:start;
+  margin-top:34px;
+}
+.article-toc-sidebar{
+  position:sticky;
+  top:105px;
+  align-self:start;
+  border-top:1px solid #b9aa9e;
+}
+.article-toc-sidebar>span{
+  display:block;
+  padding:14px 0 9px;
+  font-size:9px;
+  letter-spacing:.16em;
+  color:#8a776c;
+}
+.article-toc-sidebar a{
+  display:block;
+  padding:12px 0;
+  border-top:1px solid #d8ccc1;
+  color:#6b5b52;
+  text-decoration:none;
+  font-size:11px;
+  line-height:1.55;
+  transition:.18s ease;
+}
+.article-toc-sidebar a:hover{
+  color:#2b1a12;
+  padding-left:5px;
+}
+.article-main-column{
+  min-width:0;
+}
+.article-layout-with-toc .article-leadbox{
+  margin-top:0;
+}
+.article-layout-with-toc .article-content{
+  width:100%;
+}
+
+@media(max-width:900px){
+  .article-page.rich{max-width:980px}
+  .article-layout-with-toc{
+    grid-template-columns:1fr;
+    gap:0;
+  }
+  .article-toc-sidebar{
+    display:none;
+  }
+}
+
+/* 상세페이지 우측 상담창을 메인과 동일하게 노출 */
+.article-page + .detail-seo-expanded ~ .floating,
+body>.floating{
+  z-index:90;
+}
+body>.modal{
+  z-index:200;
+}
