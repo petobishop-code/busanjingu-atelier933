@@ -2094,3 +2094,44 @@ body>.modal{
 @media(min-width:1600px){.medical-specialty-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media(max-width:900px){.medical-specialty-head{grid-template-columns:1fr;gap:14px}.medical-specialty-grid{grid-template-columns:repeat(2,1fr);gap:18px}.medical-specialty-card{min-height:240px;padding:24px}}
 @media(max-width:600px){.medical-specialty-insights{padding:68px 0}.medical-specialty-head h2{font-size:32px}.medical-specialty-grid{grid-template-columns:1fr;gap:16px}.medical-specialty-card{min-height:215px;padding:22px}}
+
+
+/* v42 - 진료과 카드 폭 축소 + 가운데 정렬 */
+.medical-specialty-insights > .container{
+  width:min(1180px, calc(100% - 48px));
+  margin:0 auto;
+}
+.medical-specialty-grid{
+  grid-template-columns:repeat(3, minmax(0, 1fr)) !important;
+  gap:18px !important;
+  max-width:1180px;
+  margin:0 auto;
+}
+.medical-specialty-card{
+  min-height:230px !important;
+  padding:24px 22px !important;
+}
+.medical-specialty-card h3{
+  font-size:20px !important;
+  line-height:1.42 !important;
+}
+.medical-specialty-card p{
+  font-size:12px !important;
+  line-height:1.8 !important;
+}
+@media(max-width:980px){
+  .medical-specialty-insights > .container{
+    width:min(100% - 32px, 900px);
+  }
+  .medical-specialty-grid{
+    grid-template-columns:repeat(2, minmax(0,1fr)) !important;
+  }
+}
+@media(max-width:600px){
+  .medical-specialty-insights > .container{
+    width:calc(100% - 24px);
+  }
+  .medical-specialty-grid{
+    grid-template-columns:1fr !important;
+  }
+}
