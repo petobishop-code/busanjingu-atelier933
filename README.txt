@@ -1,4 +1,4 @@
-부산진구 아틀리에 933 상가분양 사이트
+부산진구 애비뉴 933 상가분양 사이트
 
 1. GitHub 저장소 busanjingu-atelier933 루트에 이 ZIP의 내용 전체를 업로드하세요.
 2. Vercel에서 해당 저장소를 Import 후 Deploy 합니다.

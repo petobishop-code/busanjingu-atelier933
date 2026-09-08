@@ -52,7 +52,7 @@ export default async function handler(req, res) {
   }
 
   const text = [
-    '🏢 부산진구 아틀리에 933 상담신청',
+    '🏢 부산진구 애비뉴 933 상담신청',
     `이름: ${n}`,
     `연락처: ${p}`,
     `관심분야: ${i || '-'}`,
